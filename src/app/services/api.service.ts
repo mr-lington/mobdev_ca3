@@ -21,8 +21,14 @@ export class ApiService {
     }
 
     getCharacter(id) {
-        return this.http.get(`https://www.breakingbadapi.com/api/characters/${id}`);
+        return this.http.get(`https://8100-best019-mobdevca3-wvel6ajp0tb.ws-eu45.gitpod.io/assets/character.json`);
     }
+
+    
+
+ //   getCharacter(id) {
+//        return this.http.get(`https://www.breakingbadapi.com/api/characters/${id}`);
+//    }
 
     getQuotes() {
         return this.http.get(`https://www.breakingbadapi.com/api/quotes`)
