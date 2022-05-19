@@ -1,35 +1,35 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Death Details</ion-title>
-    <ion-buttons slot="start" defaultHref="/tabs/deaths">
+    <ion-title>Episode Details</ion-title>
+    <ion-buttons slot="start" defaultHref="/tabs/episodes">
       <ion-back-button></ion-back-button> 
       </ion-buttons>
 
-    <ion-title>{{ death?.death }}</ion-title>   
+    <ion-title>{{ eposide?.title }}</ion-title>   
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-card *ngIf="death" class="movie-card">
+  <ion-card *ngIf="episode" class="movie-card">
 
     <ion-item > 
       <ion-icon name="card" slot="start"></ion-icon> 
-     Season: {{ death.season }} Episode: {{ death.episode }}
+     Season: {{ episode.season }} Episode: {{ episode.episode_id }}
     </ion-item>
 
     <ion-item>
-      <ion-icon name="death" slot="start"></ion-icon>
-      Cause: {{ death.cause }}
+      <ion-icon name="episode" slot="start"></ion-icon>
+      Release Date: {{ episode.air_date }}
     </ion-item>
     
     <ion-item >  
       <ion-icon name="calendar" slot="start"></ion-icon>
-      Responsible: {{ death.responsible }} 
+      Characters: {{ episode.characters }} 
     </ion-item>
 
     <ion-item >  
       <ion-icon name="calendar" slot="start"></ion-icon>
-      Last wordss: {{ death.last_words }}
+     Series: {{ episode.series }}
     </ion-item>
   
   </ion-card>
