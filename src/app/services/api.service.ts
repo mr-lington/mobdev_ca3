@@ -13,7 +13,7 @@ export class ApiService {
     }
 
     getEpisode(id) {
-        return this.http.get(`https://8100-best019-mobdevca3-wvel6ajp0tb.ws-eu45.gitpod.io/assets/episode.json`);
+        return this.http.get(`https://www.breakingbadapi.com/api/episodes/${id}`);
     }
 
     getCharacters() {
