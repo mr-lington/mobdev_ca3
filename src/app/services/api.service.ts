@@ -9,7 +9,7 @@ export class ApiService {
     constructor(private http: HttpClient) { }
 
     getEpisodes() {
-        return this.http.get('https://8100-best019-mobdevca3-wvel6ajp0tb.ws-eu45.gitpod.io/assets/episodes.json')
+        return this.http.get('https://8100-mrlington-mobdevca3-b3w36j7txjr.ws-eu45.gitpod.io/assets/episodes.json')
     }
 
     getEpisode(id) {
@@ -17,7 +17,7 @@ export class ApiService {
     }
 
     getCharacters() {
-        return this.http.get('https://8100-best019-mobdevca3-wvel6ajp0tb.ws-eu45.gitpod.io/assets/characters.json')
+        return this.http.get('https://8100-mrlington-mobdevca3-b3w36j7txjr.ws-eu45.gitpod.io/assets/characters.json')
     }
 
     getCharacter(id) {
@@ -29,7 +29,7 @@ export class ApiService {
     }
 
     getQuote(id) {
-        return this.http.get(`https://8100-best019-mobdevca3-wvel6ajp0tb.ws-eu45.gitpod.io/assets/quotes.json`);
+        return this.http.get(`https://8100-mrlington-mobdevca3-b3w36j7txjr.ws-eu45.gitpod.io/assets/quotes.json`);
     }
 
     getDeaths() {
@@ -37,7 +37,7 @@ export class ApiService {
     }
 
     getDeath(id) {
-        return this.http.get(`https://8100-best019-mobdevca3-wvel6ajp0tb.ws-eu45.gitpod.io/assets/deaths.json`)
+        return this.http.get(`https://8100-mrlington-mobdevca3-b3w36j7txjr.ws-eu45.gitpod.io/assets/deaths.json`)
     }
 
 }
